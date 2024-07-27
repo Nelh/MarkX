@@ -19,7 +19,7 @@ class NewsRepository implements NewsRepositoryInterface
        return News::create($data);
     }
 
-    public function update(array $data,$id){
+    public function update(array $data, $id){
        return News::whereId($id)->update($data);
     }
     
